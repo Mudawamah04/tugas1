@@ -1,0 +1,163 @@
+* { margin: 0; padding: 0; } /* Mengatur margin dan padding semua elemen menjadi 0 */
+body, html { height: 100%; } /* Mengatur tinggi body dan html menjadi 100% */
+.main {
+    width: 100%; /* Mengatur lebar elemen dengan class "main" menjadi 100% */
+    height: 100vh; /* Mengatur tinggi elemen dengan class "main" menjadi 100% dari tinggi viewport */
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0.8) 70%), url(1.jpg) center/cover no-repeat; /* Mengatur gambar latar belakang dan gradient untuk elemen dengan class "main" */
+}
+.navbar, .content {
+    width: 1200px; /* Mengatur lebar elemen dengan class "navbar" dan "content" menjadi 1200px */
+    margin: auto; /* Mengatur margin otomatis untuk elemen dengan class "navbar" dan "content" */
+}
+.navbar {
+    height: 75px; /* Mengatur tinggi elemen dengan class "navbar" menjadi 75px */
+    display: flex; /* Mengatur tampilan elemen dengan class "navbar" menjadi flex */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal dalam elemen dengan class "navbar" */
+}
+.icon { width: 200px; } /* Mengatur lebar elemen dengan class "icon" menjadi 200px */
+
+.logo {
+    width: 50px; /* Mengatur lebar elemen dengan class "logo" menjadi 100px */
+    height: auto; /* Mengatur tinggi elemen dengan class "logo" menjadi auto */
+    margin-top: 25px; /* Mengatur margin atas elemen dengan class "logo" menjadi 25px */
+}
+.menu {
+    flex: 1; /* Mengatur flex grow, flex shrink, dan flex basis elemen dengan class "menu" */
+    display: flex; /* Mengatur tampilan elemen dengan class "menu" menjadi flex */
+    justify-content: center; /* Menyelaraskan item di tengah secara horizontal dalam elemen dengan class "menu" */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal dalam elemen dengan class "menu" */
+}
+ul {
+    display: flex; /* Mengatur tampilan elemen dengan tag "ul" menjadi flex */
+}
+ul li {
+    list-style: none; /* Menghapus bullet point dari item daftar */
+    margin: 27px 62px 0 0; /* Mengatur margin elemen dengan tag "li" */
+    font-size: 14px; /* Mengatur ukuran font elemen dengan tag "li" */
+}
+
+ul li a {
+    text-decoration: none; /* Menghapus garis bawah dari link */
+    color: #fff; /* Mengatur warna teks link menjadi putih */
+    font-family: Arial, serif; /* Mengatur jenis font link */
+    font-weight: bold; /* Mengatur tebal font link */
+    transition: 0.4s; /* Mengatur durasi transisi efek hover link */
+}
+
+ul li a:hover {
+    color: #00bfff; /* Mengatur warna teks link saat di-hover menjadi biru */
+}
+
+.content {
+    color: #fff; /* Mengatur warna teks elemen dengan class "content" menjadi putih */
+    position: relative; /* Mengatur posisi elemen dengan class "content" menjadi relatif */
+}
+.content h1 {
+    font-family: 'Times New Roman'; /* Mengatur jenis font judul */
+    font-size: 50px; /* Mengatur ukuran font judul */
+    padding-left: 20px; /* Mengatur padding kiri judul */
+    margin-top: 9%; /* Mengatur margin atas judul */
+    letter-spacing: 2px; /* Mengatur jarak antar huruf judul */
+}
+.content .par {
+    padding: 0 0 25px 20px; /* Mengatur padding elemen dengan class "par" */
+    font-family: Arial; /* Mengatur jenis font elemen dengan class "par" */
+    letter-spacing: 1.2px; /* Mengatur jarak antar huruf elemen dengan class "par" */
+    line-height: 30px; /* Mengatur tinggi baris elemen dengan class "par" */
+}
+
+.content span {
+    color: #00bfff; /* Mengatur warna teks elemen dengan tag "span" menjadi biru */
+    font-size: 65px; /* Mengatur ukuran font elemen dengan tag "span" */
+}
+.form {
+    width: 250px; /* Mengatur lebar elemen dengan class "form" menjadi 250px */
+    height: 380px; /* Mengatur tinggi elemen dengan class "form" menjadi 380px */
+    background: rgba(0,0,0,0.8); /* Mengatur warna latar belakang elemen dengan class "form" menjadi hitam transparan */
+    position: absolute; /* Mengatur posisi elemen dengan class "form" menjadi absolut */
+    top: -20px; /* Mengatur posisi atas elemen dengan class "form" */
+    left: 870px; /* Mengatur posisi kiri elemen dengan class "form" */
+    transform: translateY(-5%); /* Menggeser elemen dengan class "form" ke atas sebesar 5% dari tinggi elemen itu sendiri */
+    border-radius: 10px; /* Mengatur radius border elemen dengan class "form" */
+    padding: 25px; /* Mengatur padding elemen dengan class "form" */
+}
+.form h2 {
+    font-family: sans-serif; /* Mengatur jenis font judul form */
+    text-align: center; /* Menyelaraskan judul form ke tengah */
+    color: #00bfff; /* Mengatur warna teks judul form menjadi biru */
+    font-size: 22px; /* Mengatur ukuran font judul form */
+    background-color: #fff; /* Mengatur warna latar belakang judul form menjadi putih */
+    border-radius: 10px; /* Mengatur radius border judul form */
+    margin: 2px 0; /* Mengatur margin judul form */
+    padding: 8px; /* Mengatur padding judul form */
+}
+.form input {
+    width: 100%; /* Mengatur lebar input field menjadi 100% dari lebar elemen induknya */
+    height: 35px; /* Mengatur tinggi input field menjadi 35px */
+    background: transparent; /* Mengatur latar belakang input field menjadi transparan */
+    border: none; /* Menghapus border input field */
+    border-bottom: 1px solid #00bfff; /* Menambahkan border bawah input field dengan warna biru */
+    color: #fff; /* Mengatur warna teks input field menjadi putih */
+    font-size: 15px; /* Mengatur ukuran font input field */
+    letter-spacing: 1px; /* Mengatur jarak antar huruf input field */
+    margin-top: 30px; /* Mengatur margin atas input field */
+    font-family: sans-serif; /* Mengatur jenis font input field */
+}
+.form input:focus { outline: none; } /* Menghapus outline input field saat difokuskan */
+::placeholder {
+    color: #fff; /* Mengatur warna teks placeholder input field menjadi putih */
+    font-family: Arial; /* Mengatur jenis font placeholder input field */
+}
+.btnn {
+    width: 100%; /* Mengatur lebar tombol menjadi 100% dari lebar elemen induknya */
+    height: 40px; /* Mengatur tinggi tombol menjadi 40px */
+    background: #00bfff; /* Mengatur warna latar belakang tombol menjadi biru */
+    border: none; /* Menghapus border tombol */
+    margin-top: 30px; /* Mengatur margin atas tombol */
+    font-size: 18px; /* Mengatur ukuran font tombol */
+    border-radius: 10px; /* Mengatur radius border tombol */
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat di-hover */
+    color: #fff; /* Mengatur warna teks tombol menjadi putih */
+    transition: 0.4s; /* Mengatur durasi transisi efek hover tombol */
+}
+.btnn:hover {
+    background: #fff; /* Mengubah warna latar belakang tombol menjadi putih saat di-hover */
+    color: #00bfff; /* Mengubah warna teks tombol menjadi biru saat di-hover */
+}
+/* Mengatur jenis font, ukuran font, padding atas, dan penjajaran teks untuk elemen dengan class "link" yang berada di dalam elemen dengan class "form". Ini biasanya digunakan untuk mengatur tampilan teks dalam elemen "link". */
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Mengatur tampilan teks dalam elemen "link" yang berada di dalam elemen "form". */
+.form .link a {
+    text-decoration: none;
+    color: #00bfff;
+}
+
+/* Mengatur warna teks dalam elemen "link" yang berada di dalam elemen "form" saat di-hover. */
+.liw {
+    padding: 15px 0 10px;
+    text-align: center;
+}
+
+/* Menghapus dekorasi teks (garis bawah pada link) dan mengatur warna teks link untuk elemen <a> yang berada di dalam elemen dengan class "icons". Ini biasanya digunakan untuk mengatur tampilan link dalam elemen "icons". */
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Mengatur ukuran font, padding kiri, dan durasi transisi untuk elemen <ion-icon> yang berada di dalam elemen dengan class "icons". Ini biasanya digunakan untuk mengatur tampilan dan perilaku ikon dalam elemen "icons". */
+.icons ion-icon {
+    font-size: 30px;
+    padding-left: 14px;
+    transition: 0.3s;
+}
+
+/* Mengubah warna ikon saat di-hover untuk elemen <ion-icon> yang berada di dalam elemen dengan class "icons". Ini biasanya digunakan untuk memberikan efek hover pada ikon dalam elemen "icons". */
+.icons ion-icon:hover {
+    color: #00bfff;
+}
